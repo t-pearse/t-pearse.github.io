@@ -1,0 +1,13 @@
+<section id="sidebar">
+
+  <div class="title"><a href="/">{{ site.title }}</a></div>
+  <ul class="site_nav">
+    <li><a href="/archive" {% if page.active == "archive" %}class="selected"{% endif %} class="nav_items"> Archive </a></li>
+    <li><a href="/about" {% if page.active == "about" %}class="selected"{% endif %} class="nav_items">About</a></li>
+    <li><a href="https://twitter.com/{{ site.twitter_handle}}"><i class="fab fa-twitter"></i> {{ site.twitter_handle }}</a></li>
+  </ul>
+
+
+
+
+</section>
