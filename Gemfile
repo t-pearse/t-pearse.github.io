@@ -1,5 +1,4 @@
 source "https://rubygems.org"
-ruby '2.2.6' #Required for heroku
 
 # Hello! This is where you manage which Jekyll version is used to run.
 # When you want to use a different version, change it below, save the
@@ -11,6 +10,12 @@ ruby '2.2.6' #Required for heroku
 # Happy Jekylling!
 gem "jekyll", "~> 3.6.2"
 gem "jekyll-paginate"
+
+
+gem 'rake'
+gem 'foreman'
+gem 'thin'
+gem 'rack-contrib'
 
 # This is the default theme for new Jekyll sites. You may change this to anything you like.
 gem "minima", "~> 2.0"
