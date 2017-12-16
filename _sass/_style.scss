@@ -46,9 +46,9 @@ main {
 #sidebar {
 	width: 360px;
 	position: fixed;
-	bottom: 0 !important;
+	top: 0 !important;
   left: 0;
-  height: 100%;
+//  height: 100%;
 	right: auto;
 	min-height: 690px;
   border-right: 1px solid #efefef;
