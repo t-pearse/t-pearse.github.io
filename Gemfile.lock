@@ -64,6 +64,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  bundler
   foreman
   jekyll (~> 3.6.2)
   jekyll-compose
@@ -77,4 +78,4 @@ DEPENDENCIES
   tzinfo-data
 
 BUNDLED WITH
-   1.16.0
+   2.0.1
