@@ -1,17 +1,30 @@
 title: Thomas Pearse   # your title
 author: tpearse # your name
-description: Business and technology # your description
+description: Musings largely about business and technology # your description
 twitter_handle: t_pearse
+twitter:username: t_pearse # For Jekyll SEO
+twitter:username: card # For Jekyll SEO
 
 # Build Settings
 markdown: kramdown
 highlighter: rouge
 
+
+# SEO tag
+plugins: [jekyll-seo-tag]
+
 # Pagination
 paginate: 5
 paginate_path: "/page:num/"
-gems: [jekyll-paginate]
+plugins: [jekyll-paginate]
 
+
+defaults:
+  - scope:
+      path: "assets/img"
+    values:
+      image: true
+      
 # Comments
 # disqus:
 #   shortname: xxxx-xxxxx-xxx   # your disqus shortname
@@ -21,3 +34,6 @@ gems: [jekyll-paginate]
 
 
 exclude: ['config.ru', 'Gemfile', 'Gemfile.lock', 'vendor']
+
+
+

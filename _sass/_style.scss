@@ -21,6 +21,16 @@ main {
 	border-left: 1px solid #efefef;
 	position: relative;
 
+  .projects {
+    h2.title{
+      margin: 0.2em 0 1.3em 0;
+    }
+
+    img {
+      border:1px solid #e0e0e0;
+      padding:2px;
+    }
+  }
 
   .posts {
     .meta {
@@ -155,6 +165,68 @@ main {
 			text-decoration: underline;
 		}
 	}
+}
+
+.project {
+  border-top: 1px solid #e0e0e0;
+  min-height: 135px;
+  padding: 40px 60px 40px 50px;
+  h2.title {
+      font-size: 26px;
+  }
+
+  img {
+    border: 1px solid #e0e0e0;
+    padding: 5px;
+    margin-right: 20px;
+  }
+
+  .row { width: 100%}
+
+  .left { float: left; padding-right: 20px;}
+ 
+
+  .right { vertical-align:top; margin-left: 20px; }
+
+  .content {
+    color: #333;
+    line-height: 1.8em;
+    margin-bottom: 80px;
+    width: 70%;
+    a {
+        line-height: 1em;
+        display: inline-block;
+        border-bottom: 1px dashed #00a2ff;
+        color: #000;
+        &:hover {
+            border-bottom: 1px solid #00a2ff;
+        }
+    }
+    p {
+        margin: 1.2em 0;
+    }
+    li p,
+    blockquote p {
+        margin: 0;
+    }
+    blockquote {
+        display: inline-block;
+        padding-left: 18px;
+        padding-bottom: 0;
+        font-size: 15px;
+        line-height: 25px;
+        margin-left: 0;
+        margin-top: 15px;
+        margin-bottom: 15px;
+        border-left: 5px solid #eeeeee;
+    }
+    hr {
+        border: 0;
+        height: 0;
+        border-top: 1px solid rgba(0, 0, 0, 0.1);
+        border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    }
+  }
 }
 
 .post {
@@ -351,3 +423,26 @@ main {
         padding: 40px 15px;
     }
   }
+
+
+
+  // Additions 
+
+.badge-pill {
+    padding-right: .6em;
+    padding-left: .6em;
+    border-radius: 10rem;
+}
+.badge {
+    display: inline-block;
+    padding: .25em .4em;
+    font-size: 75%;
+    font-weight: 700;
+    line-height: 1;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: baseline;
+    border-radius: .25rem;
+    color: #fff;
+    background-color: #008080;
+}

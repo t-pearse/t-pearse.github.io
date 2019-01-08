@@ -1,0 +1,9 @@
+---
+layout: post
+title:  "CES 2018: The First Time"
+date:   2018-01-28 09:00:20 +1300
+categories: tech
+published: false
+---
+
+I've been meaning to go to CES but

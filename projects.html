@@ -1,0 +1,61 @@
+---
+layout: default
+active: projects
+description: A sample of recent projects completed using various technologies and solving various business problems.
+title: Projects
+---
+
+
+<div class="projects">
+  
+    <article class="project">
+        <h2>Drplet - Deals which drop by the second</h2>
+
+        <div class="row">
+            <div class="left"><img src="{{ site.url }}/assets/img/drpletiphone.png"></img></div>
+            <div class="right">
+                <p><i>This project was the result of experimentation in a different eCommerce formats and new technologies</i>.<br /><br />
+                Instead of offering deep discounts on products, prices would decrease by one cent per second until a customers has clicked 'buy' and then the price is reset and starts decreasing again etc.<br /><br />
+                Actioncable (Rails' websocket implementation) was used to broadcast updates to open connections to reset the price when another customer has snapped up the deal.<br /><br />
+                Apple Pay was implemented to enable one click checkout; which made for a seamless customer experience. <br /><br />
+                </p>
+                <p><i>Date: 2017</i></p> 
+                <p><i>Key technologies:</i>
+                <span class="badge badge-pill badge-primary">Ruby</span>
+                <span class="badge badge-pill badge-primary">Actioncable</span>
+                <span class="badge badge-pill badge-primary">Redis</span>
+                <span class="badge badge-pill badge-primary">Javascript</span>
+                <span class="badge badge-pill badge-primary">Stripe</span>
+                </p>
+            
+            </div>
+        </div>
+    </article>
+
+
+
+    <article class="project">
+        <h2>Fixxed App</h2>
+
+        <div class="row">
+                <p>
+                    This application powered the back-office of an iPhone/iPad repair business and was built and maintained using Ruby on Rails. 
+                    By the time this application (and business was acquired) it had tracked thousands of repairs across multiple service centers in Australia and New Zealand.<br /><br />
+                    Key features included:<br />
+                    - Customer/business secure login to view repair status and accept/decline quotes.<br />
+                    - Device and service tracking for reporting purposes.<br />
+                    - Full audit trail of location/status of every device.<br />
+                    - Email and SMS notifications.<br />
+                    - Service dashboard for management to monitor KPIs.<br />
+                    <br /><br />
+                    This application was a key part of the competitive advantage for the business and key deal point upon acquisition.
+                </p>
+                <p><i>Date: 2010-2014</i></p>
+                <p><i>Key technologies:</i>
+                <span class="badge badge-pill badge-primary">Ruby on Rails</span>
+                </p>
+        </div>
+    </article>
+
+    
+</div>
