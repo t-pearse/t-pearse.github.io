@@ -1,0 +1,82 @@
+---
+layout: post
+title:  "JE. Already eaten? [JE]"
+date:   2019-01-12 09:00:20 +1300
+categories: investing
+---
+
+The rise of Uber Eats since launch in 2014 to > $6 billion USD run-rate in bookings, growing at over [200% p.a](https://www.recode.net/2018/5/31/17390076/uber-ceo-dara-khosrowshahi-code-conference) has been simply phenomenal. Uber Eats is now part of the vernacular of almost every millennial and young professional living in a large city.
+
+Uber Eats is not the first incarnation of providing food delivery/ordering online. Ordering food from private businesses started with directory style business such as [Menulog](https://www.menulog.com.au) in Australia and the original [Takeaway.com](http://www.takeaway.com) in Europe. These businesses typically charged a fixed fee for restaurants presenting their menus online and were entirely responsible for the delivery service.
+
+Uber Eats, Deliveroo, GrubHub and the like have emerged with attractive mobile applications for ordering your favourite food for delivery. There are a number of factors which have led to the adoption and success of these companies:
+
+* Smartphones - providers are able to detect customer locations (removing previous UI friction).
+* Venture capital - funding available to build these capital intensive delivery networks.
+* Uber - customers become comfortable with 'on demand' style apps such as Uber and Lyft.
+* Dark/Ghost Kitchens - using data to build scalable virtual 'restaurants'. Read more [here](https://blog.producthunt.com/ubers-credit-card-is-bankrupting-restaurants-and-it-s-all-your-fault-af76ea9ca46d).
+
+These second generation food delivery services allow for business models which are significantly more attractive than previous directory style businesses in terms of revenue, profitability and market capture.
+
+[Just Eat (JE)](https://www.londonstockexchange.com/exchange/prices-and-markets/stocks/summary/company-summary/GB00BKX5CN86GBGBXSTMM.html?lang=en) is a group of online food businesses which has been disrupted and is now challenged with the question - can it remain relevant?
+
+#### Activist Attention
+
+Recently [Cat Rock Capital](https://justeatmustdeliver.com/) announced a 2% shareholding and is pushing for higher management targets and appropriate accountability and a capital review.
+
+## Sum of the parts
+
+Just Eats is largely a UK food directory/delivery business with various geographical acquisitions which it is working to integrate and transition to a delivery focussed model (using technology acquired with the Skip acquisition). 
+
+The H1 2018 uBITDA is &pound;89.4m (up 18%) which can be assumed to be ~&pound;195m on an annualised basis (assuming constant growth). Other regions providing negligible EBITDA contribution due to their size and ongoing growth investment.
+
+The next largest, and perhaps most valuable component is the investment in iFood (Brazil), presented on an unconsolidated basis within the accounts. The midpoint valuation placed on iFood by analysts is [~&pound;650m](https://static1.squarespace.com/static/5c13f4c6e17ba3aca12b9686/t/5c169a11352f53eec9692697/1544985105956/Cat+Rock+Letter+to+Just+Eat+plc+Board+of+Directors+12-17-18.pdf).
+
+## United Kingdom
+
+Just Eat is ranking #1 in Food & Drink and #39 overall in the Apple iOS store closely followed by Uber Eats (#2 and #42) and Deliveroo (#4 and #86 overall).
+
+Deliveroo appears to have &pound;277m of revenue in [FY18](https://www.theguardian.com/business/2018/oct/01/deliveroo-sales-losses-uber-takeaway-delivery)
+
+It is difficult to determine Uber Eats revenue, however as at the end of calendar year 2018 it appears to have a broadly similar number of restaurants as Deliveroo.
+
+The emergence of these two competitors (Deliveroo in 2013 and Uber Eats in 2016) and the fact that Just Eats is very likely to derive less revenue than these two competitors combined in calendar year 2018 reflects the current strategic focus. This must be somewhat difficult for management to stomach given the significant first mover advantage Just Eat had in the market. However we also must note that there is a difference in business model, with Just Eat only recently building out logistics capability.
+
+The historical profitability came from a well-run directory style business. The key issue is how quickly competitors take market share when logistics and slick usability are now required to compete.
+
+Management report that "added 11,400 net new restaurants onto our platform, with approximately 70% of our estate now being in tier 2-5 cities". This comment and the traction of competitors suggest that Just Eat is losing customers in the Tier 1 cities - which are no doubt more profitable with larger volumes. It would be useful to ascertain churn of customers and where these customers are churning from but alas these are not disclosed anywhere (*however could perhaps be scraped from the platform itself?*).
+
+
+## Canada
+
+Canada is the key focus of management in the latest 1H 2018 report (*perhaps to avoid discussing the performance of the UK business?*). The acquisition appears to have exceeded expectations, with additional earn out hurdles achieved per the 1H 2018 report and the beginning of roll out of the Skip logistics technology to other territories.
+
+SkipTheDishes app is currently [ranked](https://www.applyzer.com/main.php?mmenu=rankings&app=969229981&market=1) #2 in the Food & Drink category narrowly followed by Uber Eats [ranked](https://www.applyzer.com/main.php?mmenu=rankings&app=1058959277&market=1) at #3.
+
+However this business is generating a insignificant EBITDA - with a uEBITDA of &pound;(8.5)m (down 274% on prior period) in 1H 2018 on fast growing revenues of &pound;73m (up 310%). Significant market growth can be expected and it will be interesting to see how the recent [expansion](https://www.google.com/search?q=uber+eats+launch+in+canada&oq=uber+eats+launch+in+canada&aqs=chrome..69i57j69i60l2j35i39j69i60j35i39.2933j0j7&sourceid=chrome&ie=UTF-8) of Uber Eats impacts growth.
+
+## Australia & New Zealand
+
+The acquisition of Menulog (Australasia) in 2015 for &pound;500m is one such example of the growth stategy pursued by management. Menulog is largely represented in the accounts with &pound;456m of goodwill on balance sheet at acquisition. This was trimmed back to &pound;270m as in the interim 2018 results which management attributed to market competition.  
+
+The [New Zealand website](http://www.menulog.co.nz) has a minimal selection of 'top tier' providers in the CBD. The Australian Menulog application [ranks](https://www.applyzer.com/main.php?mmenu=rankings&submenu=getRanking&app=327982905&market=1) reasonably in the App store - sitting at #4 in the Food & Drink category and 133 overall. However when compared to Uber Eats which [ranks](https://www.applyzer.com/main.php?mmenu=rankings&submenu=getRanking&app=1058959277&market=1) #1 in Food & Drink and 17 overall, it appears as if Menulog is struggling in comparison.
+
+Media and online [commentary](https://www.choice.com.au/food-and-drink/eating-out/fast-food/articles/food-delivery-services-australia) suggests that there is a large amount of discounting provided by Menulog in the market. This may be one of the key drivers for a lower ARPO (Average Revenue Per Order) than one would otherwise expect. Discounts increased by >100% (refer note 4 of 1H 2018 accounts) however isn't broken out by territory.
+
+For instance the ARPO increase from $2.67 (FY16) to $3.27 (FY17) has been partly attributed to logistics integration. Logistics should increase ARPO by a factor of 200-300% - however we haven't seen this here - perhaps will start really flowing in next quarter. Uber Eats is known to take a 30-35% cut from vendors and assuming an average order size of c. $25 - this equals at least three that of Menulog...
+
+In the H1 2018 report ANZ revenue actually decreased on a comparative half year basis despite having delivery available to over 2 million customers for three months.
+
+### OrderPad
+
+The highly acclaimed OrderPad technology is coming up for three years old and it will be an interesting to see how this technology develops (or is replaced) as logistics is incorporated into Just Eat. OrderPad is an important technology in terms of restaurant lock-in (and an immaterial amount of ancillary revenue (the 2016 annual report discussed the bundling of utility discounts)). However with the likes of Uber Eats and Deliveroo going with a very fast paced software development strategy, a change to a more dynamic cloud and iPad type setup may be part of the future.
+
+OrderPad is not a significant component to the business however is an indicator of management strategy and execution as well as representing one more distraction.
+
+## Wrap up
+
+* The UK business is growing and is the key contributor to the business... But growth appears to pale in comparison to market growth (see Uber Eats and Deliveroo).
+* Logistics capability far behind competitors and represents a significant pivot in strategy. Can management implement logistics quick enough to remain relevant?
+* Can the UK business can grow fast enough (both in margins and revenue) to retain shareholder confidence?
+* Is a marked improvement of the ANZ business possible and can management show a path to meaningful profitability?
+

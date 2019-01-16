@@ -8,6 +8,82 @@ title: Projects
 
 <div class="projects">
   
+
+    <article class="project">
+            <h2>Debtor Insight <span class="offset-80"><a href="http://www.debtorinsight.co.nz" class="btn btn-outline">Visit</a></span></h2>
+            <div class="left"><img src="{{ site.url }}/assets/img/debtorinsight.png" width="375px"></img></div>
+            <div class="right">
+            <div class="row">
+                <p>
+                    Using natural language processing (NLP) and AI to analyse plaintext court notices relating to liquidations and receiverships in New Zealand.<br /><br />
+                    Debtor Insight is used by leading liquidation practices in New Zealand and credit managers.
+                    <br /><br />
+                    Custom dashboards created for customers developed using Chart.js, integration with NZBN register completed using (my) open sourced <a href="https://github.com/t-pearse/nzbn">NZBN gem</a>.
+                    <br />
+                    
+                </p>
+                    <p><i>Date: 2018</i></p> 
+                    <p><i>Key technologies:</i>
+                    <span class="badge badge-pill badge-primary">Ruby on Rails</span>
+                    <span class="badge badge-pill badge-primary">NLP</span>
+                    <span class="badge badge-pill badge-primary">Heroku</span>
+                    <span class="badge badge-pill badge-primary">Chart.js</span>
+
+                    </p>
+                
+            </div>
+        </div>
+    </article>
+
+
+    <article class="project">
+        <h2>Automated Audit with Xero</h2>
+
+        <div class="row">
+                <p>
+                    <i>With the growing adoption of cloud accounting packages and 'open APIs', I hypothesised that it would be possible to automate a large number of audit and compliance procedures using cloud technology.</i>
+                    <br /><br />
+                    I built a prototype tool using Rails and the Xero API to assist in verifying and testing various account balances. I prototyped the use of OCR (through Google Vision) to verify integrity of supporting documents (invoices, receipts) against underlying ledger transactions.
+                    <br /><br />
+                    There are some API restrictions which make testing of various balances difficult however this project was a great introduction into building a robust finance product.
+                </p>
+                <p><i>Date: 2017</i></p> 
+                <p><i>Key technologies:</i>
+                <span class="badge badge-pill badge-primary">Ruby on Rails</span>
+                <span class="badge badge-pill badge-primary">Xero</span>
+                <span class="badge badge-pill badge-primary">Google Cloud Vision</span>
+                <span class="badge badge-pill badge-primary">React.js</span>
+                </p>
+            
+        </div>
+    </article>
+
+
+
+    <article class="project">
+        <h2>Automated Related Party Checks - NZ</h2>
+
+        <div class="row">
+            <div class="left"><img src="{{ site.url }}/assets/img/awr.png" width="375px"></img></div>
+            <div class="right">
+                <p><i>This was built to automate and improve the accuracy of related party checks for client engagements</i>.<br /><br />
+                I developed and open soruced a Ruby wrapper for the <a href='{% post_url 2017-09-01-Updated-NZBN-api-ruby-gem %}'>NZ Companies Office</a> API </a> and built a self service web application to identify potential related party transactions.<br />
+                <br />This tool uses an algorithm to identify secondary and tertiary directorships and shareholdings for current directors (and recently resigned directors) to assist an engagement team to identify potential related party conflicts.</p>
+                
+                <br />The application has been used to completed thousands of checks since launch in 2015.
+
+                </p>
+                <p><i>Date: 2015</i></p> 
+                <p><i>Key technologies:</i>
+                <span class="badge badge-pill badge-primary">Ruby on Rails</span>
+                <span class="badge badge-pill badge-primary">Actioncable</span>
+                <span class="badge badge-pill badge-primary">Javascript</span>
+                </p>
+            
+            </div>
+        </div>
+    </article>
+
     <article class="project">
         <h2>Drplet - Deals which drop by the second</h2>
 
@@ -15,7 +91,7 @@ title: Projects
             <div class="left"><img src="{{ site.url }}/assets/img/drpletiphone.png"></img></div>
             <div class="right">
                 <p><i>This project was the result of experimentation in a different eCommerce formats and new technologies</i>.<br /><br />
-                Instead of offering deep discounts on products, prices would decrease by one cent per second until a customers has clicked 'buy' and then the price is reset and starts decreasing again etc.<br /><br />
+                Instead of offering deep discounts on products, prices would decrease by one cent per second until a customer has clicked 'buy' and then the price is reset and starts decreasing again etc.<br /><br />
                 Actioncable (Rails' websocket implementation) was used to broadcast updates to open connections to reset the price when another customer has snapped up the deal.<br /><br />
                 Apple Pay was implemented to enable one click checkout; which made for a seamless customer experience. <br /><br />
                 </p>
@@ -31,8 +107,6 @@ title: Projects
             </div>
         </div>
     </article>
-
-
 
     <article class="project">
         <h2>Fixxed App</h2>

@@ -39,6 +39,8 @@ main {
 
 
     article{
+
+      
       h2.title{
         margin: 0.2em 0 1.3em 0;
       }
@@ -173,6 +175,10 @@ main {
   padding: 40px 60px 40px 50px;
   h2.title {
       font-size: 26px;
+  }
+
+  .right a {
+    border-bottom: 1px dashed #00a2ff;
   }
 
   img {
@@ -446,3 +452,47 @@ main {
     color: #fff;
     background-color: #008080;
 }
+
+
+
+
+
+.btn {
+  display: inline-block;
+  font-weight: 400;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  border: 1px solid transparent;
+  padding-left: 25px;
+  padding-right: 25px;
+  letter-spacing: 0;
+  font-size: 1rem;
+  line-height: 1.5;
+  border-radius: 20px;
+  border-width: solid;
+  transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+.btn-outline {
+  color: #00a2ff;
+  background-color: transparent;
+  background-image: none;
+  border-color: #00a2ff;
+  border: 1px solid;
+}
+
+.btn-outline:hover {
+  background-color: #00a2ff;
+  color: white;
+}
+
+.pull-right {
+  float: right;
+}
+
+.offset-80 { margin-left: 80px;}

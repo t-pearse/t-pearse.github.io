@@ -1,9 +1,49 @@
 ---
 layout: post
-title:  "CES 2018: The First Time"
-date:   2018-01-28 09:00:20 +1300
+title:  "CES - tips and tricks for first timers"
+date:   2018-04-28 09:00:20 +1300
 categories: tech
-published: false
+published: true
 ---
 
-I've been meaning to go to CES but
+I've been meaning to go to CES for a long time but never quite made the pilgrimage until 2018. CES is an amazing resource and I would highly recommend a trip for anyone working in the Technology field with an amazing array of vendors. Below are a few tips and tricks from my first visit to CES.
+
+### Credentials
+
+CES is an industry only event, meaning that you need an affiliation with the Consumer Electronics industry in order to attend. The scope of the affiliation is quite broad and includes journalists, financiers, buyers, distributors and founders.
+
+### Plan
+
+Given the number of vendors and floorspace at CES it is important to have a plan of what you want to see and who you need to meet with. The venues are generally grouped by broad theme and floor plans published well in advance of the show.
+
+It is an incredible show in terms of number and quality of companies on display. It is very easy to have high quality discussions with potential suppliers and their products.
+
+![CES Samsung Booth](/images/ces-samsung.jpg)<br />
+<i><b>CES 2018</b> - One edge of the Samsung booth with people for scale.</i>
+
+### Schedule
+
+Depending on the purpose of your visit, I'd recommend leaving the main venue floor until the second or third day and focus on the other venues. This enables media to get around and provide you a summary of what is worthwhile looking at from all the big vendors and it enables you to miss some awful queues.
+
+I'd highly recommend starting each day as early as possible and finishing early, the crowds only get worse throughout the day and the vendors only more fatigued. Various lunch restaurants and options also get very, very busy so you can make the most of your time if you can beat peak-lunchtime rush (or find alternative lunch options).
+
+
+### Accommodation
+
+Book early. Really early. During CES about 180k people descend on Las Vegas which enables hotels to price rooms accordingly, with prices significantly higher than usual. CES offer a number of discounts on their [website](https://www.ces.tech/Logistics/Hotels.aspx) for attendees which are often a good starting point. But be prepared for a bit of price gouging.
+
+The large hotels have advantages as CES shuttles run to and from here directly and credentials can be picked up directly from the majority of hotels.
+
+AirBNB is another good option however have heard of a few people getting stung with last minute cancellations from the property provider....
+
+### Travel between venues
+
+Exhibitors are based in a number of venues around Las Vegas. CES run regular buses between different venues which I would highly recommend as these buses go directly from door to door with minimal hassle.
+
+Uber is another option however surge pricing can be tough to stomach and are limited where they can pickup and drop off.
+
+Alternatively you can walk, however you will be doing a lot of walking as it is.
+
+
+
+

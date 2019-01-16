@@ -1,11 +1,11 @@
 ---
 layout: post
 title:  "Financing SMEs with Data"
-date:   2018-12-02 09:00:20 +1300
+date:   2018-12-12 09:00:20 +1300
 categories: tech
 ---
 
-Ever since the global financial crisis, retail banks have shied from providing loans to small business loans providing an opportunity for new startups to service this demand. 
+Ever since the global financial crisis, retail banks have shied from providing loans to small business. This has provided an opportunity for new startups to service this demand. 
 
 Access to recent, accurate and comparable data is key to making profitable credit decisions. 
 
@@ -81,3 +81,12 @@ Anecdotally, I suspect that the quality of open banking data is not as useful as
 In addition, these data-centric credit risk profiling is being applied in a customer perspective with a number of providers extending deferred payment options to customers. The majority of these providers do not charge customers typical interest or late payment fees and rather charge the merchant a fixed percentage for bearing the entire credit risk.
 
 Large players in this market include the VC backed firms of [Affirm](http://www.affirm.com) and [Klarna](http://www.klarna.com) which originated from the US and EU markets respectively. Similarly [AfterPay](http://www.afterpay.com) has recently expanded from Australia to the US market.
+
+
+## What's next?
+
+As these businesses grow we should expect to see more regulation to ensure financial inclusion. We are seeing this already in Australia with Prospa recently delaying their IPO due to regulatory concerns.
+
+Further opportunities from 'unbundling' of banking is likely with 'Open Banking' picking up significant government support, particularly in the EU. Companies like [Revolut](https://www.revolut.co.uk) are leading the charge and will be of much interest to follow.
+
+Conversely it will be interesting to see the impact of a economic downturn with these new 'non-bank' providers not having a portfolio of products manage a dramatic change in credit climate.
