@@ -3,6 +3,7 @@ layout: post
 title:  "New Zealand Directorships"
 date:   2017-12-29 11:47:20 +1300
 categories: ruby
+description: "Exploring directorship-company relationships using force diagrams."
 ---
 
 New Zealand Companies Office data is complex and I have built several internal tools for my [employer](https://www.linkedin.com/in/thomaspearse/) to present and explore complex datasets to satisfy risk management and support analysis.

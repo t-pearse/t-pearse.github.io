@@ -3,6 +3,8 @@ layout: post
 title:  "Navigating Commercial Importing in NZ"
 date:   2016-04-17 12:00:00 +1300
 categories: smallbusiness
+description: "Experience and wisdom from importing goods into New Zealand."
+
 ---
 If your business is in importing physical products, maximising your margin and minimising transit time are key factors in success. One element which took me a while to work out is how to navigate customs clearance promptly and efficiently. To give some context, at the time we were airfreighting thousands of dollars worth of product a week from the United States and Asia across several shipments. Also a few pallets from China via air or sea freight on a semi-regular basis.
 

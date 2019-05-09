@@ -3,6 +3,8 @@ layout: post
 title:  "Financing SMEs with Data"
 date:   2018-12-12 09:00:20 +1300
 categories: tech
+description: "Exploration of how data is enabling small businesses to access growth capital."
+
 ---
 
 Ever since the global financial crisis, retail banks have shied from providing loans to small business. This has provided an opportunity for new startups to service this demand. 

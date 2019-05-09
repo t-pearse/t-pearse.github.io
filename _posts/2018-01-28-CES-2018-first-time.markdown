@@ -4,6 +4,8 @@ title:  "CES - tips and tricks for first timers"
 date:   2018-04-28 09:00:20 +1300
 categories: tech
 published: true
+description: "The fabled Consumer Electronics Show. I've been meaning to attend for a while and finally made the trip in 2018"
+
 ---
 
 I've been meaning to go to CES for a long time but never quite made the pilgrimage until 2018. CES is an amazing resource and I would highly recommend a trip for anyone working in the Technology field with an amazing array of vendors. Below are a few tips and tricks from my first visit to CES.

@@ -3,6 +3,8 @@ layout: post
 title:  "Switching from iPhone to Android"
 date:   2013-06-24 12:00:00 +1300
 categories: mobile
+description: "My experiences on throwing away the iPhone and using Android."
+
 ---
 I've been a dedicated iPhone user for the last five years since importing and jailbreaking the original iPhone. Back then the iPhone was out-of-this-world, a crisp block of glass and metal, in contrast to the competing plastic counterparts.
 

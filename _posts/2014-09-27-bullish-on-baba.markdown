@@ -3,8 +3,10 @@ layout: post
 title:  "Bullish on BABA"
 date:   2014-09-27 12:00:00 +1300
 categories: investments
+description: "An exploration of Alibaba as an investment proposition. Including a number of key highlights from the IPO prospectus."
+
 ---
-I've been using the Alibaba (and more recently the AliExpress platform) for the last five years. I was incredibly excited to get access to their prospectus and being able to pour over the business in detail from the the boards position. From a personal experience there are four key points, highlighted below, on why I'm bullish on Alibaba.
+I've been using the Alibaba (and more recently the AliExpress platform) for the last five years. I was incredibly excited to get access to their prospectus and being able to pore over the business in detail from the the boards position. From a personal experience there are four key points, highlighted below, on why I'm bullish on Alibaba.
 
 **Alibaba will change eCommerce. Worldwide.**
 

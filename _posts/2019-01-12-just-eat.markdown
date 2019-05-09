@@ -3,6 +3,7 @@ layout: post
 title:  "JE. Already eaten? [JE]"
 date:   2019-01-12 09:00:20 +1300
 categories: investing
+description: "The rise of Uber Eats is challenging Just Eat (LON: JE). There are a number of challenges which Just Eat need to overcome, quickly, in order to remain relevant in this competitive category."
 ---
 
 The rise of Uber Eats since launch in 2014 to > $6 billion USD run-rate in bookings, growing at over [200% p.a](https://www.recode.net/2018/5/31/17390076/uber-ceo-dara-khosrowshahi-code-conference) has been simply phenomenal. Uber Eats is now part of the vernacular of almost every millennial and young professional living in a large city.

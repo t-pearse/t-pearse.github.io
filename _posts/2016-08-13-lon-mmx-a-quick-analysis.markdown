@@ -3,8 +3,10 @@ layout: post
 title:  "LON:MMX - A Quick Analysis"
 date:   2016-08-13 12:00:00 +1300
 categories: investing
+description: "Are gTLDs a new asset class? Exploration of MMX - a listed investment vehicle for domain names."
+
 ---
-Minds + Machines (MMX) is gLTD (generic Top Level Domain) investment vehicle listed on the AIM under MMX.
+Minds + Machines (MMX) is a gTLD (generic Top Level Domain) investment vehicle listed on the AIM under MMX.
 
 Firstly, a gLTD is the suffix to a domain name, such as .com, .xyz, .vip etc. In around 2008, ICANN decided to open and publish new gLTDs through an application and auction process. The owner of the gLTD typically sells domain name rights on an annual (think lease) basis to customers (so for instance enabling Mike to have his website domain name as mike.vip).
 
