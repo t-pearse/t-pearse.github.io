@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "JE. Already eaten? [JE]"
+title:  "JE. Already eaten? ($JE.)"
 date:   2019-01-12 09:00:20 +1300
 categories: investing
 description: "The rise of Uber Eats is challenging Just Eat (LON: JE). There are a number of challenges which Just Eat need to overcome, quickly, in order to remain relevant in this competitive category."
