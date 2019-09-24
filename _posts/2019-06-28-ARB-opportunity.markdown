@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "($ARB): Overlooked microcap?"
+title:  "$ARB: Overlooked microcap?"
 date:   2019-06-28 09:00:20 +1300
 categories: investing 
 description: "Quick analysis and thoughts on Argo Blockchain (ARB) on the London Stock Exchange"
