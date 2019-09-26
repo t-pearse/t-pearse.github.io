@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Setup your own personal website and domain in 2019"
-date:   2019-09-01 09:00:20 +1300
+date:   2019-08-01 09:00:20 +1300
 categories: web
 description: "How to setup your own personal website and domain name in 2019"
 ---

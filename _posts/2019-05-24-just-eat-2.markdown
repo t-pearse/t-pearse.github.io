@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Just Eat ($JE.) - Updated"
+title:  "Just Eat ($JE.) - an updated view"
 date:   2019-05-24 09:00:20 +1300
 categories: investing
 description: "Competition and disruption in the food delivery market. How Just Eat ($JE.) is struggling to compete."
