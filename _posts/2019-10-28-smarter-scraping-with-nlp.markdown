@@ -6,7 +6,7 @@ categories: technology
 description: "A few experiences in improving the accuracy of web scraping using Natural Language Processing as a precursor to machine learning"
 ---
 
-For several projects I've needed to extract specific words from a block of plaintext or extract certain words or types of phrases from different places on a web page. Web scraping works very well if the element is in the same place and same format on every webpage however scraping quickly falls apart when you're trying to anything more complex.
+For several projects I've needed to extract specific words from a block of plaintext or extract certain words or types of phrases from different places on a web page. Web scraping works very well if the element is in the same place and same format on every webpage however scraping quickly falls apart when you're trying to do anything more complex.
 
 Below are a few techniques I have picked up from trying to overcome quality issues, without training an entire ML model or relying on high-degree of human input.
 
