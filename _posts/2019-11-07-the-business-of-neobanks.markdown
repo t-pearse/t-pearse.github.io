@@ -3,7 +3,7 @@ layout: post
 title:  "The Business of Neobanks"
 date:   2019-11-07 09:00:20 +1300
 categories: technology
-description: ""
+description: "How Neobanks are unbundling the traditional retail bank and facing challenges to establish a sustainable business model."
 ---
 
 Over the last few years there has been a gradual unbundling of retail banks which is quickly gaining pace. Retail banks had become a bit too big an unwieldy, customers were increasingly unhappy with the poor service, bank profits were at record highs and increased government regulation provided high barriers to entry.
