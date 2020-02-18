@@ -3,7 +3,7 @@ layout: post
 title:  "Song catalogues as an alternative investment through Hipgnosis"
 date:   2020-01-10 09:00:20 +1300
 categories: investments
-description: "Hipgnosis - picking up mainstream media attention"
+description: "Hipgnosis is an investment vehicle for songs and musical intellectual property."
 ---
 
 Hipgnosis has recently been attracting [media](https://marker.medium.com/the-man-whos-spending-1-billion-to-own-every-pop-song-75df0024155b) attention after entry to the main market of the London Stock Exchange under the catchy ticker [SONG](https://www.londonstockexchange.com/exchange/prices-and-markets/stocks/summary/company-summary/GG00BFYT9H72GGGBXSSMM.html).

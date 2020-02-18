@@ -3,7 +3,7 @@ layout: post
 title:  "eCommerce is not living up to its promise"
 date:   2019-12-07 09:00:20 +1300
 categories: ecommerce
-description: "How to use the acts_as_votable gem to quickly implement like/dislike buttons"
+description: "Ecommerce was promised to eliminate middlemen and enable businesses to sell globally directly to consumers who can now buy with ease at fair and transparent prices."
 ---
 
 Ecommerce was promised to eliminate middlemen and enable businesses to sell globally directly to consumers who can now buy with ease at fair and transparent prices.
