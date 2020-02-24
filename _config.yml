@@ -1,6 +1,6 @@
 title: Thomas Pearse   # your title
 author: tpearse # your name
-description: Personal log about business, technology and investing.  # your description
+description: Personal blog about vaguely interesting business, technology and investing things.  # your description
 twitter_handle: t_pearse
 twitter:username: t_pearse # For Jekyll SEO
 twitter:username: card # For Jekyll SEO
@@ -8,6 +8,11 @@ twitter:username: card # For Jekyll SEO
 # Build Settings
 markdown: kramdown
 highlighter: rouge
+
+
+# Google Analytics
+
+google_analytics: UA-158985410-1
 
 
 # SEO tag

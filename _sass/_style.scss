@@ -111,27 +111,35 @@ main {
 
 	.site_nav{
 		padding: 0 30px;
-		list-style: none;
+    list-style: none;
 		li {
 			height: 32px;
 			display: block;
-			margin: 15px auto auto 62px;
+      margin: 15px auto auto 15px;
+      border-bottom: 1px solid black;
 		}
 
 
 		a {
+      display: block;
 			font-size: 14px;
 			background-color: #fff;
-      border-radius: 20px;
 			z-index: 999;
 			padding: 7px 20px;
-			border: 4px solid #f8f8f8;
+			border: 1px solid #f8f8f8;
+      border-right-width: 0px;
+      border-left-width: 0px;
 
-
-			&:hover, &.selected{
-				border-color: #00a2ff;
+			&:hover {
+        transition-property: border-color;
+        transition-duration: 2s;
+        transition-delay: 0.3s;
+        border-color: #00a2ff;
 			}
 
+			&.selected{
+        color: #00a2ff;
+			}
 		}
 	}
 }
