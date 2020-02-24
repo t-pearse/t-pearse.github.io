@@ -41,7 +41,7 @@ I downloaded the weekly Spotify [chart data](https://spotifycharts.com/) and loo
 The most interesting feature of this analysis is the 'long tail' of streams. Good quality songs appear to produce a stable number of streams in the long term period (or at least over three years). This may also be due to the ongoing growth of streaming, in which case the underlying chart position may be a more relevant metric. It would be very interesting to repeat this analysis in a few years once a larger time period is available.
 
 
-![Ed Sheeran - Shape of You](/images/hipgnosis/shapeofyou.png)
+![Ed Sheeran - Shape of You](/images/shapeofyou.png)
 
 > Spotify weekly chart data for _Shape of You (Ed Sheeran)_ part of the Johnny McDaid catalogue owned by Hipgnosis.
 
