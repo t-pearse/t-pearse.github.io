@@ -3,7 +3,7 @@ layout: post
 title:  "Keytone Dairy Corporation (KTD.AU)"
 date:   2020-04-08 09:00:20 +1300
 categories: investments
-description: "KTD (ASX) - a fast growing functional dairy ingredient manufacturer. A quick look at risks "
+description: "KTD (ASX) - a fast growing functional dairy ingredient manufacturer. A quick look at the risks and potential."
 ---
 
 Keytone Dairy Corporation was established in 2011 for production and supply of NZ dairy and nutritional products. The business was listed on the ASX in July 2018. Keytone manufactures dairy and nutritional products under their own brands, 'KeyDairy' and 'KeyHealth', as well as various contract manufacturing arrangements (including Walmart China (Sam's Club)). In mid 2019 Keytone acquired Omniblend, an Australian-based product developer and contract manufacturer. The acquisition enabled Keytone to increase manufacturing capacity, expand product range throughout the health and wellness sector and allow potential further vertical integration opportunities (more M&A/PD). In late 2019 a futher consumer foods business was acquired, Super Cubes, which non-dairy product such as ready-made frozen smoothies.
