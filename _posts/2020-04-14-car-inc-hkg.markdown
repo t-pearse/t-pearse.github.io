@@ -3,7 +3,7 @@ layout: post
 title:  "CAR Inc (699.HK)"
 date:   2020-04-14 09:00:20 +1300
 categories: investments
-description: ""
+description: "The stock price of CAR Inc has been hammered due to the Luckin Coffee scandal. Has CAR Inc been oversold? A quick look at ongoing related party issues and key financial risks before considering the high risk of fraud"
 ---
 
 Charles Zhenghao Lu founded CAR Inc in 2007. CAR Inc offered short-term and long-term car rentals to customers across China. The business was taken through to IPO in 2014. At IPO there were several reputable backers including Hertz, Ctrip (now trip.com) and Warburg Pincus.
@@ -58,6 +58,7 @@ GEO Investing had [accused](https://geoinvesting.com/car-inc-0699-hk-heading-tow
 
 - Fraud is limited to Luckin Coffee and not CAR Inc.
 - The financials are relatively sound, particularly depreciation assumptions.
+- Debt balances (some due to expire next year) appear difficult to refinance - with the bonds now yielding >80%.
 - On a NAV/share basis, CAR Inc appears very favourable compared to Hertz and other car rental companies. 
 - Warburg Pincus remain committed investors (NB: have removed both UCAR and CAR Inc from their [website](https://web.archive.org/web/20190819155622/warburgpincus.com/industry/geography/china/))
 - Rumours of a potential takeover are not [incorrect](https://pandaily.com/ctrip-considering-takeover-of-car-a-car-rental-company-owned-by-luckin-chairman/) 
