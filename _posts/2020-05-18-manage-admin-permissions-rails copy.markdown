@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Manage administrators in Rails - with a simple and secure task"
+title:  "Manage administrators in Rails - with a task"
 date:   2020-05-18 09:00:20 +1300
 categories: rails
 description: "How to manage adminisators with devise and a simple rake task, accessible from the console. Promote/demote and list current admins."
