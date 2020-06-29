@@ -81,6 +81,8 @@ Handlebars can be used throughout the template, including the subject and pre-he
 Variables can be passed through from your app into the sendgrid template.
 
 ~~~~~~
+{% raw %}
+
 Hi {{userName}},
 
 Welcome my site.
@@ -89,6 +91,7 @@ Welcome my site.
 You have a business account.
 {{#/if}}
 
+{% endraw %}
 ~~~~~~
 
 #### Authenticated Senders
