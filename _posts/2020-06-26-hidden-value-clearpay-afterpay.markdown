@@ -1,9 +1,9 @@
 ---
 layout: post
-title:  "Hidden value - Clearpay and Afterpay"
+title:  "Hidden value - Afterpay and Clearpay"
 date:   2020-06-26 09:00:20 +1300
 categories: investments
-description: ""
+description: "ThinkSmart retains a 10% (includes an employee ESOP of up to 35%) stake in ClearPay with an option for AfterPay to acquire the stake"
 
 ---
 
