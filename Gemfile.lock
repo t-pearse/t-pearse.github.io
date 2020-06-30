@@ -64,7 +64,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  bundler
+  bundler (~> 2.1.4)
   foreman
   jekyll (~> 3.6.2)
   jekyll-compose
