@@ -81,10 +81,10 @@ From discussion above, it does not appear unreasonable for the Clearpay stake to
 
 Cash of £8.5m (NB: operations cashflow positive)
 + Other net assets of £4m
-+ Clearpay holding of £32m (not unreasonable)
++ Clearpay holding of ~£32m (not unreasonable)
 + _Implied value_ £44.5m
 
-The current market cap of c. £21m provides some gap, however keep in mind that the put option may not be exercised until 2023 and execution is not risk free.
+The current market cap of c. £21m provides some opportunity, however keep in mind that the put option may not be exercised until 2023 and execution is not risk free. And the valuation of Afterpay can be a little challenging to understand.
 
 
 
