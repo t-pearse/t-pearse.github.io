@@ -19,6 +19,7 @@ gem 'rake'
 gem 'foreman'
 gem 'puma'
 gem 'rack-contrib'
+gem "github-pages", group: :jekyll_plugins
 
 gem 'jekyll-compose', group: [:jekyll_plugins]
 
