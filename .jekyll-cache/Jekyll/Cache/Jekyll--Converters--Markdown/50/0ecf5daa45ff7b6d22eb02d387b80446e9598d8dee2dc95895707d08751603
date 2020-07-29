@@ -1,0 +1,82 @@
+I"�<p>I needed to implement a set of simple like/dislike actions to a Rails project and was inspired by the simple like and dislike buttons on <a href="https://www.producthunt.com">ProductHunt</a>. I struggled to find a well written guide on how to implement <a href="https://github.com/ryanto/acts_as_votable">acts_as_votable</a> asynchronously with Rails 6, so have put the following quick guide together which I hope gives a fairly complete example.</p>
+
+<p>See below for a gif demonstration. For some reason the cursor isn’t visible - but hopefully self explanatory.</p>
+
+<p><img src="/images/likedislike.gif" alt="Like and dislike GIF" /></p>
+
+<h3 id="gemfile">Gemfile</h3>
+
+<p>Using <a href="https://github.com/twbs/bootstrap-rubygem">Bootstrap</a> and <a href="https://fontawesome.com/icons">Font Awesome</a> in the code below.</p>
+
+<div class="language-ruby highlighter-rouge"><div class="highlight"><pre class="highlight"><code> <span class="n">gem</span> <span class="s1">'acts_as_votable'</span>
+ <span class="n">gem</span> <span class="s1">'devise'</span>
+ <span class="n">gem</span> <span class="s1">'font_awesome5_rails'</span>
+ <span class="n">gem</span> <span class="s1">'bootstrap'</span><span class="p">,</span> <span class="s1">'~&gt; 4.3.1'</span>
+</code></pre></div></div>
+
+<p>Ensure you install and run the migration for any new gems.</p>
+
+<h3 id="model">Model</h3>
+
+<p>I’ve used a <em>Comment</em> model. You can use whichever model you want - but make sure to configure it appropriately.</p>
+
+<h3 id="view">View</h3>
+
+<p>Fairly self explanatory. Using a helper function (see below) to manage the html class of the button. I have an identical one for the dislike action (opposite of like).</p>
+
+<p>The <em>comment.get_likes.size</em> returns the number of comments. You can wrap this up in a helper to only show a count if &gt;0.</p>
+
+<p>I’d recommend using actioncable to get the vote count to automatically update.</p>
+
+<div class="language-ruby highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">&lt;</span><span class="sx">%= link_to like_comment_path(comment.id), remote: true, id: "like_#{comment.id}", class: "btn #{liked_comment(comment)} btn-sm btn-block" do %&gt;
+    &lt;%=</span> <span class="n">fa_icon</span> <span class="s2">"smile"</span> <span class="o">%&gt;</span> 
+    <span class="o">&lt;</span><span class="sx">%= comment.get_likes.size %&gt;
+&lt;% end %&gt;
+</span></code></pre></div></div>
+
+<h3 id="controller">Controller</h3>
+
+<p>Take note of the format.js</p>
+
+<div class="language-ruby highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">def</span> <span class="nf">like</span>
+    <span class="k">if</span> <span class="vi">@comment</span><span class="p">.</span><span class="nf">liked_by</span> <span class="n">current_user</span>
+        <span class="n">respond_to</span> <span class="k">do</span> <span class="o">|</span><span class="nb">format</span><span class="o">|</span>
+        <span class="nb">format</span><span class="p">.</span><span class="nf">html</span> <span class="p">{</span> <span class="n">redirect_to</span> <span class="ss">:back</span> <span class="p">}</span>
+        <span class="nb">format</span><span class="p">.</span><span class="nf">js</span>
+        <span class="k">end</span>
+    <span class="k">end</span>
+<span class="k">end</span>
+</code></pre></div></div>
+<h3 id="router">Router</h3>
+
+<p>Unlike is the route I’ve used for un-liking a comment. Dislike and undislike are for disliking a post and un-disliking (opposite of disliking).
+These routes are essentially ‘nested’ under the comments resource.</p>
+
+<div class="language-ruby highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  <span class="n">resources</span> <span class="ss">:comments</span> <span class="k">do</span>
+    <span class="n">member</span> <span class="k">do</span>
+      <span class="n">get</span> <span class="s1">'like'</span>
+      <span class="n">get</span> <span class="s1">'unlike'</span>
+      <span class="n">get</span> <span class="s1">'dislike'</span>
+      <span class="n">get</span> <span class="s1">'undislike'</span>
+    <span class="k">end</span>
+  <span class="k">end</span>
+</code></pre></div></div>
+
+<h3 id="helper">Helper</h3>
+
+<p>I used a helper to set the html class of the button on page load. For example, this will return a ‘solid’ button when the button is clicked and the user has either voted_up or voted_down on the particular comment. You can skip this functionality if you would prefer to do in view or just not have this functionality.</p>
+
+<div class="language-ruby highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">module</span> <span class="nn">CommentsHelper</span>
+    <span class="k">def</span> <span class="nf">liked_comment</span><span class="p">(</span><span class="n">comment</span><span class="p">)</span>
+            <span class="k">return</span> <span class="s1">'btn-liked'</span> <span class="k">if</span> <span class="n">user_signed_in?</span> <span class="o">&amp;&amp;</span> <span class="p">(</span><span class="n">current_user</span><span class="p">.</span><span class="nf">voted_up_on?</span> <span class="n">comment</span><span class="p">)</span>
+            <span class="s1">'btn-like'</span>
+    <span class="k">end</span>
+   
+    <span class="k">def</span> <span class="nf">disliked_comment</span><span class="p">(</span><span class="n">comment</span><span class="p">)</span>
+        <span class="k">return</span> <span class="s1">'btn-disliked'</span> <span class="k">if</span> <span class="n">user_signed_in?</span> <span class="o">&amp;&amp;</span> <span class="p">(</span><span class="n">current_user</span><span class="p">.</span><span class="nf">voted_down_on?</span> <span class="n">comment</span><span class="p">)</span>
+        <span class="s1">'btn-dislike'</span>
+    <span class="k">end</span>
+<span class="k">end</span>
+</code></pre></div></div>
+
+:ET

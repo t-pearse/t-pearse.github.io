@@ -1,0 +1,35 @@
+I"<p>The <a href="http://www.business.govt.nz/companies">New Zealand Companies Office</a> is pretty special - the extent of publicly available information is world class. Particularly when compared with ASIC where users have to pay for search results. Access to full historical directorships, major shareholdings and key data is pretty useful.</p>
+
+<p><br /></p>
+
+<p>There are some <a href="http://lancewiggs.com/2009/11/30/in-praise-of-coys/">technical difficulties</a> with the ‘Restful’ API  which can make even the simplest functionality or reporting incredibly a little frustrating in a production application! Some significant functionality is not available through the API but can be retrieved with a little bit of HTTP trickery.
+<br /><br /></p>
+
+<hr />
+<p><br /></p>
+
+<h2 id="packaged-in-a-gem">Packaged in a Gem</h2>
+
+<p><br />
+I’ve just released a Ruby Gem to make any Rails integration a walk in the park. The key features include full authentication (a real lifesaver), search functions and returning ready-to-parse xml.</p>
+
+<ul>
+  <li>Refer to Github:  <strong><em><a href="https://github.com/t-pearse/nzcoapi">nzcoapi Gem</a></em></strong></li>
+</ul>
+
+<blockquote>
+  <p>Simple and fast authenticating API wrapper for the New Zealand Companies Office. Full functionality to search by company name, company number and director.</p>
+</blockquote>
+
+<h3 id="usage-example">Usage Example:</h3>
+
+<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby">    <span class="c1"># View</span>
+	<span class="o">&lt;</span><span class="sx">%= NZcoapi.find_company(973228).css('companyName').text %&gt;
+
+    # Returns
+	Trade Me Limited
+
+    # (Magic !)</span></code></pre></figure>
+
+<p><em>Flick me a message @t_pearse if there are any queries on development using the above gem (or API).</em></p>
+:ET

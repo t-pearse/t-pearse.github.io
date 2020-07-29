@@ -1,0 +1,19 @@
+I"{<p>Chart.js is a great javascript library to quickly create beautiful SVG charts.</p>
+
+<p>With Rails 5 it was quick and easy to install a <a href="https://github.com/coderbydesign/chart-js-rails">Chart.js Gem</a> into the asset pipeline to get started.</p>
+
+<p>Rails 6 introduced <a href="https://github.com/rails/webpacker">Webpacker</a> as the default Javascript pre-processor and bundler. This is a much tidier and simpler way to manage JS dependencies. Installing Chart.js into your application is now even easier:</p>
+
+<p>Add Chart.js with your favourite package manager (i.e Yarn) in the console.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>yarn add chart.js
+</code></pre></div></div>
+
+<p>Add a require() in your JS pack.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>// app/javascript/packs/application.js
+require("chart.js")
+</code></pre></div></div>
+
+<p>All done - you can now use the Chart() function throughout your application and manage Chart.js updates with ease without relying on a gem or manual files.</p>
+:ET

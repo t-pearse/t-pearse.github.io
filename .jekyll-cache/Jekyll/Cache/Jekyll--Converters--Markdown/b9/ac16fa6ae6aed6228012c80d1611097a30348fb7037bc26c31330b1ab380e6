@@ -1,0 +1,70 @@
+I"  <p>Over the last few years there has been a gradual unbundling of retail banks which is quickly gaining pace. Retail banks had become a bit too big an unwieldy, customers were increasingly unhappy with the poor service, bank profits were at record highs and increased government regulation provided high barriers to entry.</p>
+
+<p>In the UK a number of current account providers have appeared and competing heavily to be the primary ‘checking’ account for individuals. These include the likes of Monzo, Revolut and Starling Bank. The general approach to these platforms is:</p>
+
+<ul>
+  <li>Mobile-first experience (onboarding, KYC)</li>
+  <li>Debit card</li>
+  <li>Multi-currency</li>
+  <li>ATM withdrawals</li>
+  <li>Upsell users to a premium subscription (metal cards, free insurance etc.)</li>
+</ul>
+
+<p>None of these neobanks appear profitable yet and are all chasing the opportunity to be the consumer ‘financial hub’ in the future. If any of these banks looked like a historical</p>
+
+<h3 id="how-do-typical-retail-banks-make-money">How do typical retail banks make money?</h3>
+
+<h5 id="net-interest-income">Net interest income</h5>
+
+<p>Essentially using (a portion) of customer deposits to lend or invest in other assets which generate an income. This could include customer overdrafts or mortgages etc.</p>
+
+<p>The key driver to increase interest income is to increase the value of customer deposits, which is partly why we are seeing banks encouraging users to receive payroll payments directly into their neobank account. In the UK, the government deposit protection scheme (FSCS) protects up to £85,000 per account. The majority of neobanks are offering a <em>Switch Guarantee</em> to ensure a smooth transfer of all direct deposits. However many people are struggling to put their faith (and their assets) in a unproven bank.</p>
+
+<h5 id="lending">Lending</h5>
+
+<p>Lending is the key source of income for traditional retail banks. These predominantly come in the form of mortgages, overdrafts (or unsecured lending) and credit cards.</p>
+
+<h6 id="mortgages">Mortgages</h6>
+
+<p>No neobanks appear to be directly offering mortgage products however there is some evidence the likes of Monzo are strongly looking at cross-selling through partnerships with existing banks.</p>
+
+<p>Other startups are attempting to use data to make better mortgage decisions. <a href="https://www.nytimes.com/2019/05/07/business/economy/ibuying-real-estate.html">Zillow</a> controversially started this by flipping entire houses rather than simply offering mortgages. <a href="https://proportunity.co/">Proportunity</a> is offering equity home loans using data.</p>
+
+<p>It will be interesting whether neobanks can effectively cross-sell these products to customers or whether mortgage providers are still able to attract customers.</p>
+
+<h6 id="credit-cards">Credit Cards</h6>
+
+<p>I suspect <em>buy-now pay-later</em> businesses are perhaps the key disruptors in the credit card business. Companies such as <a href="https://www.klarna.com">Klarna</a> and <a href="https://www.afterpay.com">AfterPay</a> appear to be growing quickly and able to build up enough data in order to minimise credit losses. The next step for these players is to move off the payment gateways provided by Visa/Mastercard and use their own payment ‘rails’ and reduce transaction costs further.</p>
+
+<p>Neobanks have not appeared to offer credit card products yet. I imagine the level of competition is the main challenge and no doubt partnerships and referrals - similar to what Starling Bank is doing with their <a href="https://www.starlingbank.com/marketplace/">marketplace</a> is likely the initial entrance for lending products.</p>
+
+<h5 id="other-fees-and-commissions">Other fees and commissions</h5>
+
+<p>Traditional banks have long been cross-selling products such as insurance (home, travel) and bundling premium account services. Revolut has been offering <a href="https://www.revolut.com/revolut-premium">Premium</a> and Metal subscriptions offering some of these products. I expect we will see a lot more of this in the future, as these apps transition to being the trusted financial ‘hub’ for personal finance.</p>
+
+<p>Monzo recently launched their <a href="https://monzo.com/features/energy-switching/">energy switching</a> feature which makes a lot of sense. I do wonder if there is further opportunity to leverage financial transaction data to help supplier acquire customers quickly…</p>
+
+<h5 id="investment-products">Investment products</h5>
+
+<p>It seems like all neobanks, including Square’s <a href="https://cash.app/">Cash App</a> and <a href="https://www.revolut.com">Revolut</a> are offering share trading. Revolut is leveraging <a href="https://drivewealth.com/">DriveWealth</a> as a platform to facilitiate trading and brokerage. Monzo is offering current and fixed-term deposit accounts in partnership with boutique financiers.</p>
+
+<p>There are other apps in the UK, such as <a href="https://www.moneyboxapp.com/">MoneyBox</a> which, from a simple product of rounding up transactions, is building out entire pension and saving products as a ‘Digital wealth manager’. I suspect we will see some neobanks building out savings focussed features, in the hopes of increasing deposits and then building or partnering with investment product providers.</p>
+
+<p>There hasn’t been significant disruption in the investment product space as far as I can see. The majority is simply attaching an online platform to an existing fund manager (index-linked or active investing). I suspect the real revolution has been the emergence and support for index-investing. I wonder if higher risk active-investing products (think crowdfunding, boutique asset investing) - like eToro - will become more popular and a succesful product.</p>
+
+<h4 id="business-banking">Business Banking</h4>
+
+<p>Most retail banks have a business banking arm which, for a small business, primarily provides lending and merchant services (i.e. card acceptance) in addition to typical payment services.</p>
+
+<p>Small business in particular have been pretty poorly served historically by incumbent banks and it is really exciting to see plenty of disruption here - from <a href="https://www.tide.co/">Tide</a> to Revolut’s business accounts. Credit card payments have well and truly been unbundled with the likes of <a href="https://squareup.com/gb/en/app">Square</a>. Payments are still sitting on the Visa/Mastercard payment ‘rails’ but may be disrupted or regulated to zero.</p>
+
+<p>There is plenty of unbundling and plenty more to come, highlighted with <a href="https://stripe.com/gb/issuing">Stripe</a> and their new card issuing product.</p>
+
+<p>I have previously highlighted a few interesting startups working on lending <a href="/tech/2018/12/11/financing-smes-with-data.html">using data</a>. I expect there is plenty more to come in the lending space.</p>
+
+<h3 id="unbundling-of-retail-banks-is-this-the-endgame">Unbundling of retail banks. Is this the endgame?</h3>
+
+<p>What we are seeing is each and every product offered by a traditional retail bank being unbundled into new startups - and serviced through mobile apps and APIs rather than retail stores and paper-mail. I suspect there will be some consolidation of these startups in due course but at the moment there is plenty of advertising money being ‘set alight’ as each startup tries to build customer base on the promise of being the ‘financial hub’ of the future.</p>
+
+<p>However I think the immediate risk is that this unbundling will remain a permanent fixture in the market and that consumers in the future will use a broad range of products from a broad range of suppliers, all held together with APIs. There will no longer be one banking relationship and individual will hold. This will enable best of breed products for consumers however will mean that there will be a very limited opportunity for large ‘platform plays’ which venture capital is seeking. If this is the case, I doubt these neobank platforms will ever be as profitable as the previous retail banks despite the attractiveness of leaving behind legacy systems and the lower cost structures.</p>
+:ET

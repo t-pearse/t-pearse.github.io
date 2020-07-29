@@ -1,0 +1,52 @@
+I"P<p>A few years ago I published the <a href="https://github.com/t-pearse/nzcoapi">nzcoapi gem</a> which was primarily a wrapper for ‘difficult to navigate’ SOAP API provided by the <a href="http://www.business.govt.nz/companies">New Zealand Companies Office</a>.</p>
+
+<p>The API has been grandfathered and a flash new <a href="">NZBN</a> API is available which is a lot cleaner and easy to use. I had to update a number of applications and have now released an updated Ruby Gem which makes interacting with the new NZBN API a breeze.</p>
+
+<ul>
+  <li>Refer to Github:  <strong><em><a href="https://github.com/t-pearse/nzbn">nzbn Gem</a></em></strong></li>
+</ul>
+
+<blockquote>
+  <p>Simple and fast authenticating API wrapper for the New Zealand Companies Office. Full functionality to search by company name, company number and director.</p>
+</blockquote>
+
+<h2 id="installation">Installation</h2>
+
+<p>Add this line to your application’s Gemfile:</p>
+
+<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby">    <span class="n">gem</span> <span class="s1">'nzbn'</span></code></pre></figure>
+
+<p>And then execute:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ bundle
+</code></pre></div></div>
+
+<p>Or install it yourself as:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ gem install nzbn
+</code></pre></div></div>
+
+<p>You will also need to set the following ENV variables in order to access the API. These can be found on the business.govt.nz website under your login.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ NZBN_ID=
+
+$ NZBN_SECRET=
+</code></pre></div></div>
+
+<h2 id="usage">Usage</h2>
+
+<p>Two functions have been exposed, as per below.</p>
+
+<h3 id="company-details-by-nzbn">Company details by NZBN</h3>
+
+<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby">	<span class="no">NZBN</span><span class="p">.</span><span class="nf">entity</span><span class="p">(</span><span class="n">nzbn</span><span class="p">)</span>
+  </code></pre></figure>
+
+<p>Full company details based on a unique ‘Company Number’ (nzbn) will be returned.</p>
+
+<h3 id="search-for-a-company">Search for a Company</h3>
+
+<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby">	<span class="no">NZBN</span><span class="p">.</span><span class="nf">entities</span><span class="p">(</span><span class="n">search_term</span><span class="p">,</span> <span class="n">entity_status</span><span class="p">,</span> <span class="n">page_length</span><span class="p">)</span></code></pre></figure>
+
+<p>All output is returned as parsed JSON. Within a rails view it can be quickly navigated with <a href="https://github.com/sparklemotion/nokogiri">Nokogiri</a> or similar.</p>
+:ET

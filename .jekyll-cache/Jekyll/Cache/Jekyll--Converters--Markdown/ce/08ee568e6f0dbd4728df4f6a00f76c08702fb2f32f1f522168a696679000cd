@@ -1,0 +1,8 @@
+I"³<p>Supposedly the Yahoo Finance API used to be the holy grail of finance data, providing reliable and accurate finance data for free. Iâ€™ve been working on a recent project which required ASX market data - specifically daily historical data (volume, open, close etc).</p>
+
+<p><a href="https://iexcloud.io/docs/api/#international-exchanges">IEX Cloud</a> has a great API and allows for a fairly high volume of calls. Unfortunately ASX market support has not yet been delivered, however appears to be in the <a href="https://portal.productboard.com/iexcloud/1-iex-cloud-roadmap/c/41-australian-stock-exchanges">pipeline</a> with an unconfirmed delivery date.</p>
+
+<p>I was about to purchase historical CSV market data however came across <a href="https://www.alphavantage.co/">Alphavantage</a> and the expanded</p>
+
+<p><a href="https://www.alphavantage.co/">Alphavantage</a> has ASX (as well as a number of other international exchanges) data available in a great API. Plus there are easy wrappers for your favourite language including <a href="https://github.com/StefanoMartin/AlphaVantageRB">Ruby</a>. I would highly recommend using this free service if you require any historical ASX market data.</p>
+:ET

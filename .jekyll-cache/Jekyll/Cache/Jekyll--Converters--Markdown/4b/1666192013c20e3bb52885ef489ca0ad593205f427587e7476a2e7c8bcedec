@@ -1,0 +1,47 @@
+I"š<p>I have always wondered about the best, simplest and most secure way of assigning administrator privileges to users in a production environment while using <a href="https://github.com/heartcombo/devise">Devise</a>.</p>
+
+<p>The generally accepted method is to have a boolean <em>admin</em> field in the user model. However in order to toggle this setting you can either seed administator records to your database, or temporarily have an editable field. You can also easily use an admin (like <a href="https://github.com/activeadmin/activeadmin">activeadmin</a>) interface to manage user permissions.</p>
+
+<p>This seemed a bit crude. On a recent project I setup a task to promote/demote and list users to have administrator privileges.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>/lib/tasks/admin.rb
+
+namespace :admin do
+    email = ENV['email']
+    
+    task :promote =&gt; :environment do
+        @user = User.find_by(email: email)
+        @user.admin = 1
+        @user.save!
+        p ENV['email'] + ' promoted to administrator'
+    end
+
+    task :demote =&gt; :environment do
+        @user = User.find_by(email: email)
+        @user.admin = 0
+        @user.save!
+        p ENV['email'] + ' demoted to administrator'
+    end
+
+    task :list =&gt; :environment do
+        @users = User.where(:admin =&gt; 1)
+        p "Listing all administrators:"
+        @users.each do |u|
+            p   u.email
+        end
+    end
+end
+</code></pre></div></div>
+
+<p>From the console you can now easily run:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>rake admin:promote email=testuser@website.com
+testuser@website.com promoted to administator
+
+rake admin:list
+Listing all administrators:
+testuser@website.com
+</code></pre></div></div>
+
+<p>Obviously this isnâ€™t perfect, but seems robust and secure enough for a small project.</p>
+:ET

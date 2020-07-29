@@ -1,0 +1,83 @@
+I"y<p>Ever since the global financial crisis, retail banks have shied from providing loans to small business. This has provided an opportunity for new startups to service this demand.</p>
+
+<p>Access to recent, accurate and comparable data is key to making profitable credit decisions.</p>
+
+<p>There are several data sources which are commonly used by vendors to base their credit decisions:</p>
+<ul>
+  <li>Merchant transaction data (credit card sales etc.);</li>
+  <li>Accounting data (Xero, Quickbooks etc); and</li>
+  <li>Open banking data (watch this space - particularly in Europe);</li>
+</ul>
+
+<p>Vendors build ‘black box’ algorithms and scoring system to interpret these data sets. These algorithms replace manual analysis and replace (or supplement) existing credit checks. In addition, the majority of these lenders require no formal asset security (or at least for &lt;$250k loans).</p>
+
+<p>The rewards for successful vendors are potentially large, with ‘relatively’ high interest rates (as high as 49% APR (incl. fees)). Regulation changes in Australia have led to standard and transparent disclosures between providers <a href="https://www.afr.com/business/top-seven-fintech-business-lenders-compliant-with-new-code-of-conduct-20181221-h19dk4">(The Australian Financial Review)</a> and the creation of <a href="https://innovativelending.org/smart-box/">SMART Box</a> disclosures.</p>
+
+<p>Listed below is a selection of interesting vendors in the space.</p>
+
+<h2 id="merchant-transaction-data">Merchant Transaction Data</h2>
+
+<h4 id="square">Square</h4>
+
+<p><a href="https://squareup.com/us/en/capital">Square Capital</a>
+<a href="https://venturebeat.com/2016/11/01/square-has-provided-more-than-1-billion-in-loans-to-businesses/">VentureBeat</a></p>
+
+<p>Square has been providing small business loans for several years and recently surpassed $3.5 billion funds extended. Square will automatically withhold a certain portion of sales until the loan has been repaid.</p>
+
+<h4 id="stripe-advance-by-stripe">Stripe Advance by Stripe</h4>
+
+<p><a href="https://techcrunch.com/2018/09/24/stripe-advance-cash/">TechCrunch</a>
+<a href="https://twitter.com/2PMinc/status/1037758316414414848">Twitter</a></p>
+
+<p>Stripe has been testing the ability to advance up to ~$25k of credit to customers and withhold a certain amount of sales as a payment until the loan is repaid.</p>
+
+<h4 id="paypal">PayPal</h4>
+
+<p><a href="https://www.paypal.com/us/webapps/mpp/paypal-business-loan">Paypal.com</a></p>
+
+<p>Paypal has a (well publicised) working capital loans, which functions like a standard working capital facility, available for small businesses.</p>
+
+<h2 id="accounting-data">Accounting Data</h2>
+
+<h4 id="prospa"><a href="https://www.prospa.com/xero/">Prospa</a></h4>
+
+<p>Small business loans, ‘real-time’ approval using Xero data.</p>
+
+<h4 id="iwoca"><a href="https://www.iwoca.co.uk/">iwoca</a></h4>
+
+<p>Small business loans, ‘real-time’ approval using Xero data.</p>
+
+<h4 id="moula-flex"><a href="https://moula.com.au/flex">Moula (Flex)</a></h4>
+
+<p>Moula Flex provides a working capital facility and assess credit risk using Xero.</p>
+
+<h4 id="marketinvoice"><a href="https://marketinvoice.com">MarketInvoice</a></h4>
+
+<p>Invoice factoring using accounting data. There are a plethora of other providers, such as InvoiceNow, Fuelled etc.</p>
+
+<h2 id="open-banking-data">Open Banking Data</h2>
+
+<h4 id="moula"><a href="https://moula.com.au/flex">Moula</a></h4>
+
+<p>Moula utilises banking data (provided by <a href="https://proviso.com.au/">Proviso</a>) to prove credit risk and provide small business loans.</p>
+
+<h4 id="funding-options"><a href="https://www.fundingoptions.com/">Funding Options</a></h4>
+
+<p>Funding options uses open banking data to prove credit risk and compare small business loan providers.</p>
+
+<p>Anecdotally, I suspect that the quality of open banking data is not as useful as sales data (Square, PayPal etc.) and accounting data (i.e. Xero) in addressing credit risk.</p>
+
+<h2 id="customer-finance">Customer Finance?</h2>
+
+<p>In addition, these data-centric credit risk profiling is being applied in a customer perspective with a number of providers extending deferred payment options to customers. The majority of these providers do not charge customers typical interest or late payment fees and rather charge the merchant a fixed percentage for bearing the entire credit risk.</p>
+
+<p>Large players in this market include the VC backed firms of <a href="http://www.affirm.com">Affirm</a> and <a href="http://www.klarna.com">Klarna</a> which originated from the US and EU markets respectively. Similarly <a href="http://www.afterpay.com">AfterPay</a> has recently expanded from Australia to the US market.</p>
+
+<h2 id="whats-next">What’s next?</h2>
+
+<p>As these businesses grow we should expect to see more regulation to ensure financial inclusion. We are seeing this already in Australia with Prospa recently delaying their IPO due to regulatory concerns.</p>
+
+<p>Further opportunities from ‘unbundling’ of banking is likely with ‘Open Banking’ picking up significant government support, particularly in the EU. Companies like <a href="https://www.revolut.co.uk">Revolut</a> are leading the charge and will be of much interest to follow.</p>
+
+<p>Conversely it will be interesting to see the impact of a economic downturn with these new ‘non-bank’ providers not having a portfolio of products manage a dramatic change in credit climate.</p>
+:ET

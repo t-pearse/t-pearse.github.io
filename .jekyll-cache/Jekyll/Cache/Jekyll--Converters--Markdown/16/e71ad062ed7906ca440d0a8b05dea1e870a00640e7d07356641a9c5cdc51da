@@ -1,0 +1,120 @@
+I"�<p>While working on a new Rails project I needed to start building out mailer functions. Previously my preferred method has been building all the views within Rails using a library like <a href="https://github.com/foundation/inky-rb">Inky</a> or <a href="https://github.com/fphilipe/premailer-rails">Premailer-Rails</a> and a lot of testing. Usually the resulting email views are below expectations but good enough.</p>
+
+<p>I’d stumbled across <a href="https://sendgrid.com/solutions/email-marketing/email-templates/">Sendgrid email templates</a> with easy <em>handlebar</em> markup and easy to use theme editors. This presented a number of advantages:</p>
+<ul>
+  <li>no more tedious html and inline-css template editing</li>
+  <li>no-code editing to the templates (i.e. non-developers can tweak marketing emails)</li>
+  <li>mobile/text/html emails all done</li>
+  <li>quick and easy to setup (should take minutes to get a professional looking email)</li>
+</ul>
+
+<p>I wrote this post as the documentation I had previously found online was a bit patchy and difficult to debug - particularly around authenticated senders and require fields in actionmailer.</p>
+
+<h4 id="install-gems">Install gems</h4>
+
+<p>Install the following two gems to your app.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>/Gemfile
+gem 'sendgrid-ruby'
+gem 'sendgrid-actionmailer'
+</code></pre></div></div>
+
+<p>Then run <em>bundle install</em> to install the gems.</p>
+
+<h4 id="get-sendgrid-api-keys">Get Sendgrid API keys</h4>
+
+<p>Get your <a href="https://app.sendgrid.com/settings/api_keys">API keys</a> from Sendgrid (under the Email API button) and set an aptly named ENV variable using whatever method you use to manage your local environment variables.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>/.env file
+
+SENDGRID_API_KEY: [put api key here]
+
+</code></pre></div></div>
+
+<h4 id="update-actionmailer-configuration">Update Actionmailer configuration</h4>
+
+<p>Update the environment configuration to tell Actionmailer to use the sendgrid_actionmailer gem and the API key we set earlier.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>/config/environment.rb
+
+  config.action_mailer.delivery_method = :sendgrid_actionmailer
+  config.action_mailer.sendgrid_actionmailer_settings = {
+    api_key: ENV['SENDGRID_API_KEY'],
+    raise_delivery_errors: true
+  }
+
+</code></pre></div></div>
+
+<h4 id="setup-mailers">Setup mailers</h4>
+
+<p>Run the following task to generate a mailer. In this case we are using a User notifier email and we will setup a welcome email.</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ rails generate mailer UserNotifierMailer
+</code></pre></div></div>
+
+<p>You will then need to create a view for this email, the view will be overwritten by the Sendgrid template, so it does not need to include anything.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Create the file app/views/user_notifier_mailer/new_user.html.erb
+
+[some text]
+</code></pre></div></div>
+
+<h4 id="setup-sendgrid-template">Setup Sendgrid template</h4>
+
+<p>Setup a new dynamic template in Sendgrid. There are plenty of templates which can be modified and provide a good base template.</p>
+
+<p>Handlebars can be used throughout the template, including the subject and pre-headers fields.</p>
+
+<p>Variables can be passed through from your app into the sendgrid template.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+
+Hi {{userName}},
+
+Welcome my site.
+
+{{if (eq userCategory "business")}}
+You have a business account.
+{{#/if}}
+
+
+</code></pre></div></div>
+
+<h4 id="authenticated-senders">Authenticated Senders</h4>
+
+<p>You will need to add an authenticated sender in Sendgrid in order to successfully use the Sengrid API.</p>
+
+<p>This setting is found under the settings tab <a href="https://app.sendgrid.com/settings/sender_auth">here</a> within your Sengrid account.</p>
+
+<p>This will be an email address you own and want to appear to your customers in the ‘from’ field.</p>
+
+<h3 id="configure-mailer">Configure mailer</h3>
+
+<p>Replace sender@example.com with the authenticated sender configured.
+Replace the template-id with the ID of the template you just created.</p>
+
+<p>The body and subject are required for actionmailer but will be overwritten by the template settings within Sendgrid.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>app/mailers/user_notifier_mailer.rb
+
+class UserNotifierMailer &lt; ApplicationMailer
+
+    require 'sendgrid-ruby'
+    include SendGrid
+
+    def new_user
+        @user = params[:user]
+        mail(to: @user.email, from: 'sender@example.com', subject: 'Some subject', body: 'Some body', template_id: 'd-9f22c78fas7fa6f40ad826fasfasdc1371ec67', 
+            dynamic_template_data: {
+                userCategory: @user.category 
+            }
+        )
+    end
+end
+</code></pre></div></div>
+
+<h4 id="all-done">All done</h4>
+
+<p>Monitor logs and monitor activity within Sendgrid to ensure all is working correctly.</p>
+
+<p>In production, I have been using this configuration succesfully with Heroku. This was not using the Sendgrid add-on, rather just using the gems and configuration specified above.</p>
+:ET

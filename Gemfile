@@ -10,7 +10,7 @@ gem 'bundler', "~> 2.1.4"
 #
 # This will help ensure the proper Jekyll version is running.
 # Happy Jekylling!
-gem "jekyll", "~> 3.6.2"
+gem "jekyll"
 gem "jekyll-paginate"
 gem 'jekyll-seo-tag'
 

@@ -1,0 +1,136 @@
+I"�+<p>After spending a some time using sentiment analysis in a professional advisory capacity, I wanted to explore a few personal ideas.</p>
+
+<p>Sentiment analysis is often overlooked as a tool to understand large amounts of unstructured data quickly and determine signals and trends over a time period.</p>
+
+<p>One such idea, was understanding if social data sentiment could be used as a leading indicactor of stock price of small cap companies. My background thinking was that small/micro caps do not have sufficient analyst coverage and minimal trading volumes therefore volume would be driven primarily by retail investors (i.e. not large funds and indexes).</p>
+
+<h4 id="data-sources">Data Sources</h4>
+
+<p>To get started, I needed to find a data source which I can derive a sentiment score from. <a href="https://www.afr.com/markets/hot-copper-is-a-vortex-of-information-filled-with-hot-air-20160922-grlqo9">Hotcopper</a> is pretty well known ‘down under’ as large stock trading forum. It is even publicly <a href="https://www.asx.com.au/asx/share-price-research/company/HOT">listed</a> on the ASX itself!</p>
+
+<p>Twitter was another data source I considered however appeared a little difficult to obtain a sufficient quantity of data easily and with sufficient cleanliness.</p>
+
+<h3 id="data-collection">Data Collection</h3>
+
+<p>I primarily chose to use Ruby due to familiarity. Pairing this with Rails would enable me to spin-up a easy to use front end as well.</p>
+
+<p>To get started, I setup a script using <a href="https://github.com/sparklemotion/mechanize">Mechanize</a> and <a href="https://github.com/sparklemotion/nokogiri">Nokogiri</a> to extract and scrape and parse data by stock.</p>
+
+<p>Initially I focussed on a handful of stocks of interest, those being with sufficient trading history and a reasonable amount of private investor interest (i.e. large number of data points). Some stocks on the ASX appear to have minimal investor interest.</p>
+
+<p>For obtaining financial data, I found <a href="https://www.alphavantage.co/">Alphavantage</a> an excellent source of ASX market data. I have written about this in more detail <a href="http://www.thomaspearse.com/ruby,/investing,/programming/2019/06/23/ASX-market-data.html">here</a>.</p>
+
+<h3 id="sentiment-analysis">Sentiment Analysis</h3>
+
+<p>After collecting this data, I next needed to find a way to score each post and assign an overall sentiment with a strength of sentiment. For instance if a post was significantly positive it could have a score of +10, if it was mildly ambivalent it could have a score of +2/-2 and if lightly negative a score of -5 would be assigned.</p>
+
+<p>I would have used the Google NLP API, which I highly recommend and use on some of my other <a href="http://www.thomaspearse.com/projects">projects</a> including <a href="https://www.debtorinsight.co.nz">Debtor Insight</a>, however it is very easy to run into some pricing constraints particularly when faced with 100,000+ posts to profile and score.</p>
+
+<p>I found another great library called <a href="https://github.com/7compass/sentimental">Sentimental</a> which performs easily identifiable sentiment analysis. You can even use your own dictionary increased precision and quality.</p>
+
+<p>I also used <a href="https://www.highcharts.com">Highcharts</a> for charting and visual analysis. I would readily use another charting system, in particular a tool which allowed multiple y-axis per chart.</p>
+
+<h3 id="analysis">Analysis</h3>
+
+<p>There are a number of different ways to think about deriving a signal from a post using sentiment. In addition to simply scoring the content of a post with a sentiment score, other ideas included:</p>
+
+<h5 id="detection-of-pump--dump-schemes">Detection of Pump &amp; Dump schemes</h5>
+<p>I also considered linking stock price performance to individual users to detect if specific users were useful in determining trends (i.e. pump and dump or valid analysis). However I suspect in order to find a strong link, a substantial amout of data would be required in order to determine a trend, in order to capture/group characters over a large period of time and products. I decided at this time it wasn’t worth pursuing at this time.</p>
+
+<h5 id="sentiment-on-market-announcements">Sentiment on market announcements</h5>
+<p>A couple of data providers already provide sentiment analysis/signals based on public announcements. I assumed this wasn’t a sufficiently unique ‘edge’ and doubted that you could react on a signal with sufficient execution speed.</p>
+
+<h5 id="upvotes-to-further-weight-the-sentiment-of-posts">Upvotes to further weight the sentiment of posts</h5>
+<p>Hotcopper allows users to ‘upvote’ individual posts by users as an indication of quality/interest. These indicators could be used to indicate quality of an individual user and ‘amplify’ the sentiment signal of individual posts.</p>
+
+<h3 id="finding-a-suitable-market">Finding a suitable market</h3>
+
+<p>The next step (which is perhaps where you should start) is to find a broker which offers the ability to go long/short on a wide variety of equity positions on the ASX.</p>
+
+<p>Typical retail brokers tend to incurr reasonable fees at c. $30 AUD/trade. Often some difficulty with liquidity and trade execution at the microcap positions. Typically you can only go long on an equity (not establish a short position). Often no leverage is available which means you are limited by your equity on hand.</p>
+
+<p>The other option is to use CFD providers (i.e. CMC). However CMC provides only a small number of ASX equities (c. 100 (ASX100?)) of which only a portion of them are open to trading. Transaction fees are minimal at c. $7/trade with leverage available.</p>
+
+<p>This is sharp contrast with the likes of the US markets where there appear to be deep markets and ability to trade long/short very easily. This lack of liquidity significantly limited the number of stocks able to be analysed and subsequently traded.</p>
+
+<h2 id="scoring-system---what-was-useful">Scoring system - what was useful</h2>
+
+<p>Below is an example of how I setup the scoring system.</p>
+
+<p><code class="language-plaintext highlighter-rouge">That's an excellent rundown on the syr agm Mr. Curly. Syrah is actually a "Born Global" firm for anybody who might be interested. Just Google the term and you will see what I mean. They behave and need to be managed in their own unique way which Chairman Askew alerted the shareholders to when he mentioned the difficulties of having a benchmark to determining directors' and senior managements' remuneration. He also mentioned that they had a clear understanding of what sort of board profile was needed to properly manage Syrah and they were working towards it. I believe Syrah is in excellent hands to go forward.</code></p>
+
+<p>Net sentiment: Positive (+1)</p>
+
+<p>Score: +5.5</p>
+
+<p>From this score we can determine that the post is on balance and is mildly positve with a score of 5.5.</p>
+
+<h5 id="additional-layers-of-analysis">Additional layers of analysis</h5>
+
+<p>There were are number of other indicators which needed to be layered onto the actual sentiment analysis in order to determine the strength of a signal.</p>
+
+<ul>
+  <li>
+    <p>Number of posts. In order to not be swayed by a low volume of posts there needed to be sufficient volume in order to support the signal.</p>
+  </li>
+  <li>
+    <p>Net sentiment vs score. Sometimes sentiment score (numerical) was misleading due to the strength of a particular post which impacts the overall score. For instance - should five mildly positive posts offset a signficantly negative post? I found it useful to look at both net sentiment score and total score in order to confirm both indicators were consistent. In the future it would likely be better to normalise the scores or bucket the scores in smaller groupings (ie mildly positive scores (5-10), highly positive scores (10+)).</p>
+  </li>
+</ul>
+
+<h4 id="examples-of-analysis">Examples of analysis</h4>
+
+<h2 id="cli-q2-2019">CLI Q2 2019</h2>
+
+<p><img src="/images/sentiment-asx/cli-ns.png" alt="CLI Net Sentiment Q2 2019" /></p>
+
+<p>This is an example of Croplogic <a href="https://finance.yahoo.com/quote/CLI.AX">(CLI:ASX)</a> over the last year.</p>
+
+<p>In this image you can see that the ‘net sentiment’ of posts over the time period had two strong increases both before an increase in stock price.</p>
+
+<p><img src="/images/sentiment-asx/cli-np.png" alt="CLI Number of Posts Q2 2019" /></p>
+
+<p>This increase in ‘net sentiment’ could partially be attributed to an increase in the overall volume of posts.</p>
+
+<p>Once you combine the net sentiment with the overall stock price movements (various plots are computed averages to show trends).</p>
+
+<p><img src="/images/sentiment-asx/cli-markup.png" alt="CLI Analysis" /></p>
+
+<p>In March 2019 the net sentiment increased c. 300% with the stock price closing at $0.030.</p>
+
+<p>In June 2019 the net sentiment has peaked up an additional 10% with the stock price closing at $0.049.</p>
+
+<p>At the end of July there had been no change in sentiment (i.e. negative trend) with the stock price closed at $0.067.</p>
+
+<p>If you had entered two trades, one at March 2019 and June 2019 following these signals you would be up c. 200% on paper.</p>
+
+<h2 id="z1p-q2-2019">Z1P Q2 2019</h2>
+
+<p>This is an example of Zip Money <a href="https://finance.yahoo.com/quote/Z1P.AX/">(Z1P:ASX)</a> over the last year.</p>
+
+<p><img src="/images/sentiment-asx/zip-as.png" alt="Z1P Average Sentiment Q2 2019" /></p>
+
+<p><img src="/images/sentiment-asx/zip-ns.png" alt="Z1P Number of Posts Q2 2019" /></p>
+
+<p>This is less clear however over the last three months there are a few obvious leading signals:</p>
+
+<p><img src="/images/sentiment-asx/zip-markup.png" alt="CLI Analysis" /></p>
+
+<ul>
+  <li>Net sentiment increase in week of 13 April.</li>
+  <li>Net sentiment increase in week of 27 April.</li>
+  <li>Negative net sentiment in week of 11 May.</li>
+</ul>
+
+<p>If you were to trade against these signals signals, you could have been up and out of a position realising 20% in little over a month.</p>
+
+<h3 id="conclusion">Conclusion</h3>
+
+<p>So, can you outperform the market using sentiment analysis alone?</p>
+
+<p>Sentiment analysis is no doubt useful to highlight potential opportunities which would otherwise be too time consuming to otherwise filter through. However it was very difficult to find a market to reliably profit from these signals. Retail brokers, such as Interactive Brokers, only offer a small number of stocks to short on the ASX. In order to act on enough of these signals, you need access to a market where you can make a large number of transactions on either side of the market (i.e. long and short).</p>
+
+<p>If I was to redo this exercise, I’d focus on finding a market first (i.e. USA?), then go about finding a relevant data source and then completing analysis around the available products.</p>
+
+<p>These signals are useful to guide and identify potential opportunities to consider. Layering on some solid diligence on these opportunities would further improve your odds of success.</p>
+:ET
