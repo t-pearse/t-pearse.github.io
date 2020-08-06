@@ -1,0 +1,188 @@
+I"�<p>Duke Royalty (AIM:DUKE) is a listed royalty investment business focussed on the European Market. Founded in 2015 by an experienced management team, Duke now manages a portfolio of £90m.</p>
+
+<p>Royalty financing is a really interesting business model and has found great success in mining industries - where traditional debt or equity financing is cost restrictive or not available and a more flexible solution is required. Royalties issued by Duke are usually long-term or even perpetual (but with buy-out clauses.)</p>
+
+<p>~~
+Royalty financing involves an upfront, one-off payment in exchange for a revenue stream for a long-term or sometimes perpetual period. Duke typically receives an initial 13.5% pa (which includes principal repayment and interest) over a 30-year period. Payments are paid monthly, but reset annually linked to the change in sales revenue of the invested company or partner. Annual resets on a cash basis have a ±6% cap and floor, which limits the movement in payment from one year to another. The royalty partners can prepay the investment, but there is a prepayment penalty designed to protect Duke from the time lag in reinvesting the money, as well the internal rate of return (IRR) of the project.</p>
+
+<p><a href="https://www.edisongroup.com/publication/a-new-wave-of-lending/25237/">Edison Group - 2019</a></p>
+
+<p>However most interestingly the stock price has continued a decline post Coronavirus. This is interesting on face value for a number of reasons:</p>
+<ul>
+  <li>Royalties are long term cashflows, where the terminal value drive the majority of value.</li>
+  <li>The business is diversified.</li>
+  <li>Security over assets exist for key investments.</li>
+  <li>Minimal leverage (~5x interest coverage in FY19)</li>
+</ul>
+
+<!-- TradingView Widget BEGIN -->
+<div class="tradingview-widget-container">
+  <div id="tradingview_566b8"></div>
+  <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/symbols/ASX-APT/" rel="noopener" target="_blank"><span class="blue-text">APT Chart</span></a> by TradingView</div>
+  <script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
+  <script type="text/javascript">
+  new TradingView.widget(
+  {
+  "autosize": true,
+  "symbol": "LON:DUKE",
+  "interval": "W",
+  "timezone": "Etc/UTC",
+  "theme": "light",
+  "style": "1",
+  "locale": "en",
+  "toolbar_bg": "#f1f3f6",
+  "enable_publishing": false,
+  "allow_symbol_change": true,
+  "container_id": "tradingview_566b8"
+}
+  );
+  </script>
+</div>
+<!-- TradingView Widget END -->
+
+<table>
+  <thead>
+    <tr>
+      <th>#Est COVID impact#</th>
+      <th>% impact</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>High</td>
+      <td>40%</td>
+    </tr>
+    <tr>
+      <td>Medium</td>
+      <td>20%</td>
+    </tr>
+    <tr>
+      <td>Low</td>
+      <td>5%</td>
+    </tr>
+    <tr>
+      <td>Upside</td>
+      <td>0%</td>
+    </tr>
+  </tbody>
+</table>
+
+<table>
+  <thead>
+    <tr>
+      <th>Company</th>
+      <th>Investment (£000)</th>
+      <th>Description</th>
+      <th>Est COVID impact</th>
+      <th>URL</th>
+      <th>Discounted value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Temarca B.V</td>
+      <td>£11,970</td>
+      <td>Leisure boat cruises (first mortgage*)</td>
+      <td>High</td>
+      <td>https://www.sijfacruises.nl/</td>
+      <td>£7,182</td>
+    </tr>
+    <tr>
+      <td>Lynx UK</td>
+      <td>£11,970</td>
+      <td>PE Group</td>
+      <td>Low</td>
+      <td>https://www.lynxequity.com/</td>
+      <td>£11,372</td>
+    </tr>
+    <tr>
+      <td>Trimite</td>
+      <td>£10,980</td>
+      <td>Industrial coatings</td>
+      <td>Medium</td>
+      <td>https://www.trimite.com/</td>
+      <td>£10,431</td>
+    </tr>
+    <tr>
+      <td>InterHealth</td>
+      <td>£9,990</td>
+      <td>Healthcare development</td>
+      <td>Low</td>
+      <td>https://interhealthcanada.com/</td>
+      <td>£9,491</td>
+    </tr>
+    <tr>
+      <td>Miriad</td>
+      <td>£9,990</td>
+      <td>Outdoor recreation products</td>
+      <td>Upside</td>
+      <td>https://www.miriad-products.com/</td>
+      <td>£9,990</td>
+    </tr>
+    <tr>
+      <td>Bakhchysarai / BIL</td>
+      <td>£9,360</td>
+      <td>Recruitment</td>
+      <td>Medium</td>
+      <td>https://www.brightwaterni.com/</td>
+      <td>£8,892</td>
+    </tr>
+    <tr>
+      <td>Weltel</td>
+      <td>£8,100</td>
+      <td>Cloud communications</td>
+      <td>Low</td>
+      <td>https://www.welltelgroup.com/</td>
+      <td>£7,695</td>
+    </tr>
+    <tr>
+      <td>United Glass Group</td>
+      <td>£7,470</td>
+      <td>Architectural glass</td>
+      <td>Low</td>
+      <td>http://www.unitedglassgroup.co.uk/</td>
+      <td>£7,097</td>
+    </tr>
+    <tr>
+      <td>BHP Insurance</td>
+      <td>£4,140</td>
+      <td>NFP insurance</td>
+      <td>Nil</td>
+      <td>https://bhpinsurance.ie/</td>
+      <td>£3,933</td>
+    </tr>
+    <tr>
+      <td>Step Investments</td>
+      <td>£2,970</td>
+      <td>Advertising (incl cinema)</td>
+      <td>High</td>
+      <td>https://www.pearlanddean.com/</td>
+      <td>£1,782</td>
+    </tr>
+    <tr>
+      <td>Xtremepush</td>
+      <td>£1,980</td>
+      <td>Online marketing</td>
+      <td>Upside</td>
+      <td>https://xtremepush.com/</td>
+      <td>£1,980</td>
+    </tr>
+    <tr>
+      <td>Berkley</td>
+      <td>£1,080</td>
+      <td>Recruitment</td>
+      <td>Medium</td>
+      <td>https://www.berkley-group.com/</td>
+      <td>£1,026</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td><em>£90,000</em></td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+:ET
